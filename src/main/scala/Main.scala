@@ -19,7 +19,7 @@ object Main extends App {
     
     val tankLourd = context.spawn(Actors.InactiveTank("tankLourd", 500, 0), "tankLourd")
     val tankLeger = context.spawn(Actors.InactiveTank("tankLeger", 500, 0), "tankLeger")
-    val tankGas   = context.spawn(Actors.InactiveTank("tankGas", 500, 0), "tankGas")
+    val tankGas   = context.spawn(Actors.InactiveTank("tankGas", 5000, 0), "tankGas")
 
     val refinery = context.spawn(Actors.Refinery(tankLourd, tankLeger, tankGas), "Refinery")
 
