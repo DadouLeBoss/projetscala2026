@@ -4,7 +4,6 @@ version := "1.0"
 
 scalaVersion := "3.3.1"
 
-// Utilisation d'une version stable et accessible sans configuration complexe
 val AkkaVersion = "2.6.21" 
 
 libraryDependencies ++= Seq(
